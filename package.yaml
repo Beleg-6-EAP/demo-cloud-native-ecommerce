@@ -1,0 +1,4 @@
+executables:
+  bootstrap:
+    source-dirs: src
+    main: Main.hs
