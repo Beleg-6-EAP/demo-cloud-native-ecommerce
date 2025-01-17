@@ -1,0 +1,25 @@
+cabal-version:      3.12
+name:               demo-cloud-native-ecommerce
+version:            0.1.0.0
+synopsis: Haskell AWS-Lambda demonstrating a cloud-native approach to a PaymentService in E-Commerce
+license:            MIT
+license-file:       LICENSE
+author:             Julian Bruder
+maintainer:         julian.bruder@outlook.com
+category:           Web
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable demo-cloud-native-ecommerce
+    import:           warnings
+    main-is:          Main.hs
+    other-modules:  PaymentService
+    build-depends:    base ^>=4.20.0.0
+                    , hal
+                    , aeson
+                    , uuid
+    hs-source-dirs:   app
+    default-language: GHC2024

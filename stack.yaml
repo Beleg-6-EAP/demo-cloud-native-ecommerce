@@ -1,0 +1,10 @@
+resolver: lts-23.4
+
+packages:
+  - .
+
+extra-deps:
+  - hal-1.1
+
+docker:
+  enable: true
