@@ -9,6 +9,7 @@ maintainer:         julian.bruder@outlook.com
 category:           Web
 build-type:         Simple
 extra-doc-files:    CHANGELOG.md
+tested-with:        GHC == 9.10.1
 
 common warnings
     ghc-options: -Wall
